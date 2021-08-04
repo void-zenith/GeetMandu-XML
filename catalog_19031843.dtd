@@ -1,0 +1,63 @@
+<!ELEMENT store (storedetails,songs,footer)>
+
+<!ELEMENT storedetails (logo,info,slogan)>
+<!ELEMENT logo (#PCDATA)>
+<!ELEMENT info (storename,address,phones,website)>
+<!ELEMENT storename (#PCDATA)>
+<!ELEMENT address (street,city,state)>
+<!ELEMENT street (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+<!ELEMENT state (#PCDATA)>
+<!ELEMENT phones (phone+)>
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT website (#PCDATA)>
+<!ELEMENT slogan (#PCDATA)>
+
+<!ATTLIST store name CDATA #REQUIRED
+        xmlns:xsi CDATA #FIXED "http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation CDATA #REQUIRED>
+<!ATTLIST phone type (primary|secondary) #IMPLIED>
+
+<!ELEMENT songs (song+)>
+<!ELEMENT song (image,songinfo,buy)>
+<!ELEMENT image (#PCDATA)>
+<!ELEMENT songinfo (name,releaseDate,recorded?,studios?,length,labels?,directors?,producers,
+writers,singers,genres,publishers?,distributors?,achievements?)>
+<!ELEMENT buy (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT releaseDate (#PCDATA)>
+<!ELEMENT recorded (#PCDATA)>
+<!ELEMENT studios (studio+)>
+<!ELEMENT studio (#PCDATA)>
+<!ELEMENT length (#PCDATA)>
+<!ELEMENT labels (label+)>
+<!ELEMENT label (#PCDATA)>
+<!ELEMENT directors (director+)>
+<!ELEMENT director (#PCDATA)>
+<!ELEMENT producers (producer+)>
+<!ELEMENT producer (#PCDATA)>
+<!ELEMENT writers (writer+)>
+<!ELEMENT writer (#PCDATA)>
+<!ELEMENT singers (singer+)>
+<!ELEMENT singer (#PCDATA)>
+<!ELEMENT genres (genre+)>
+<!ELEMENT genre (#PCDATA)>
+<!ELEMENT publishers (publisher+)>
+<!ELEMENT publisher (#PCDATA)>
+<!ELEMENT distributors (distributor+)>
+<!ELEMENT distributor (#PCDATA)>
+<!ELEMENT achievements (achievement+)>
+<!ELEMENT achievement (#PCDATA)>
+
+<!ATTLIST song s_id ID #REQUIRED
+        genre (Jazz|Rock|Rap|Pop|Dubstep) #IMPLIED
+        price CDATA #REQUIRED>
+<!ATTLIST image img_id ID #REQUIRED>
+<!ATTLIST buy buy_id IDREF #REQUIRED>
+<!ATTLIST singer siType (Lead-Singer|Backup-Singer) #IMPLIED>
+
+<!ELEMENT footer (socials,privacy)>
+<!ELEMENT socials (social*)>
+<!ELEMENT social (#PCDATA)>
+<!ELEMENT privacy (#PCDATA)>
+<!ATTLIST social social CDATA #REQUIRED>

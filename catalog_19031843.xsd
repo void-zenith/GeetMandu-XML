@@ -1,0 +1,350 @@
+<?xml version="1.0"?>
+
+<!--Flat Catalog Design-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    
+    <!--Parent Element-->
+    <xs:element name="store">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="storedetails"/>
+                <xs:element ref="songs"/>
+                <xs:element ref="footer"/>
+            </xs:sequence>
+            <xs:attribute name="name" type="xs:string"/>
+        </xs:complexType>
+    </xs:element>
+    
+    <!--storedetails - child element of parent element store-->
+    <xs:element name="storedetails">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="logo"/>
+                <xs:element ref="info"/>
+                <xs:element ref="slogan"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <!--logo - child element of storedetails-->
+    <xs:element name="logo" type="xs:string"/>
+
+    <!--info - child element of storedetails-->
+    <xs:element name="info">
+        <xs:complexType>
+            <xs:sequence>   
+                <xs:element ref="storename"/>
+                <xs:element ref="address"/>
+                <xs:element ref="phones"/>
+                <xs:element ref="website"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!--storename - child element of info-->
+    <xs:element name="storename" type="xs:string"/>
+    
+    <!--address - child element of info-->
+    <xs:element name="address">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="street"/>
+                <xs:element ref="city"/>
+                <xs:element ref="state"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!--street - child element of address-->
+    <xs:element name="street" type="xs:string"/>
+    <xs:element name="city" type="xs:string"/>
+    <xs:element name="state" type="xs:string"/>
+
+    <!--phones - child elemenf of info-->
+    <xs:element name="phones">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="phone" minOccurs="1" maxOccurs="2"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!--phone - child element of phone-->
+    <xs:element name="phone">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute ref="type"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+
+    <!--attribute of phone element-->
+    <xs:attribute name="type">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="primary" />
+				<xs:enumeration value="secondary" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute>
+
+    <!--website - child element of info-->
+    <xs:element name="website" type="xs:string"/>
+
+    <!--slogan - child element of storedetails-->
+    <xs:element name="slogan" type="xs:string"/>
+  
+    <!--songs - child element of store-->
+    <xs:element name="songs">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="song" minOccurs="1" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <!--song - child element of songs-->
+    <xs:element name="song">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="image"/>
+                <xs:element ref="songinfo"/>
+                <xs:element ref="buy"/>
+            </xs:sequence>
+            <!--attributes of song-->
+            <xs:attribute name="s_id" use="required" type="xs:ID"/>
+            <xs:attribute name="genre">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="Jazz"/>
+                        <xs:enumeration value="Rock"/>
+                        <xs:enumeration value="Rap"/>
+                        <xs:enumeration value="Pop"/>
+                        <xs:enumeration value="Dubstep"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="price" use="required" type="xs:string"/>
+        </xs:complexType>
+    </xs:element>
+    <!--image - child element of song-->
+    <xs:element name="image">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute name="img_id" use="required" type="xs:ID"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+
+    <!--songinfo - child element of song-->
+    <xs:element name="songinfo">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="name"/>
+                <xs:element ref="releaseDate"/>
+                <xs:element ref="recorded" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="studios" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="length"/>
+                <xs:element ref="labels" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="directors" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="producers"/>
+                <xs:element ref="writers"/>
+                <xs:element ref="singers"/>
+                <xs:element ref="genres"/>
+                <xs:element ref="publishers" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="distributors" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="achievements" minOccurs="0" maxOccurs="1"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!--buy - child element of song-->
+    <xs:element name="buy">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute name="buy_id" type="xs:IDREF"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <!--name - child element of songinfo-->
+    <xs:element name="name" type="xs:string"/>
+    
+    <!--releaseDate - child element of songinfo-->
+    <xs:element name="releaseDate" type="xs:string"/>
+    
+    <!--recorded - child element of songinfo-->
+    <xs:element name="recorded" type="xs:string"/>
+    
+    <!--studios - child element of songinfo-->
+    <xs:element name="studios">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="studio" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!--studio - child element of studios-->
+    <xs:element name="studio" type="xs:string"/>
+    
+    <!--length - child element of songinfo-->
+    <xs:element name="length" type="xs:string"/>
+
+    <!--labels - child element of songinfo-->
+    <xs:element name="labels">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="label" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <!--label - child element of labels-->
+    <xs:element name="label" type="xs:string"/>
+
+    <!--directors - child element of songinfo-->
+    <xs:element name="directors">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="director" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <!--director - child element of directors-->
+    <xs:element name="director" type="xs:string"/>
+
+    <!--producers - child element of songinfo-->
+    <xs:element name="producers">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="producer" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <!--producer - child element of producer-->
+    <xs:element name="producer" type="xs:string"/>
+
+    <!--writers - child element of songinfo-->
+    <xs:element name="writers">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="writer" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!--writer - child element of writer-->
+    <xs:element name="writer" type="xs:string"/>
+
+    <!--singers - child element of songinfo -->
+    <xs:element name="singers">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="singer" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!--singer - child element of singer-->
+    <xs:element name="singer">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute ref="siType"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+
+    <!--attribute of singer-->
+    <xs:attribute name="siType">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="Lead-Singer"/>
+                <xs:enumeration value="Backup-Singer"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+
+    <!--genres - child element of songinfo-->
+    <xs:element name="genres">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="genre" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!--genres - child element of genre-->
+    <xs:element name="genre" type="xs:string"/>
+
+    <!--publishers - child element of songinfo-->
+    <xs:element name="publishers">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="publisher" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!--publisher - child element of publishers-->
+    <xs:element name="publisher" type="xs:string"/>
+
+    <!--distributor - child element of songinfo-->
+    <xs:element name="distributors">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="distributor" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!--distributor - child element of distributors-->
+    <xs:element name="distributor" type="xs:string"/>
+
+    <!--achievements - child element of songinfo-->
+    <xs:element name="achievements">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="achievement" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!--achievement - child element of achievements-->
+    <xs:element name="achievement" type="xs:string"/>
+    <!--footer - child element of store-->
+    <xs:element name="footer">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="socials" minOccurs="0" maxOccurs="1"/>
+                <xs:element name="privacy" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!--socials - child element of footer-->
+    <xs:element name="socials">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="social" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!--social - child element of socials-->
+    <xs:element name="social">
+        <xs:complexType>
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="social" use="optional"/>
+            </xs:extension>
+        </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>  <!--ending of schema-->

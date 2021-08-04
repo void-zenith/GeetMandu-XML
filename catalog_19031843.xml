@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--linkning stylesheet with xml-->
+<?xml-stylesheet type="text/css" href="catalog_19031843.css"?> 
+<!--linking dtd with xml-->
+<!DOCTYPE store SYSTEM "catalog_19031843.dtd">
+<!--starting xml document-->
+<store name="GeetMandu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+			xsi:noNamespaceSchemaLocation="catalog_19031843.xsd">  <!--store the parent element-->
+    <storedetails>  <!--storedetails child of store i.e. parent element-->
+        <logo></logo>   <!--to insert logo-->
+        <info>          <!--for info of the store-->
+            <storename>GeetMandu</storename>  <!--name of the store-->
+            <address>                          <!--address of the store-->
+                <street>Lazimpat,</street>      
+                <city>Kathmandu,</city>
+                <state>Bagmati Province</state>
+            </address>
+            <phones>        <!--phone of the store-->
+                <phone type="primary">01-420691, </phone>
+                <phone type="secondary">9841761333 </phone>
+            </phones>    
+            <website>www.GeetMandu.com.np</website> <!--website of the store-->
+        </info>
+        <slogan>You are What you Listen To!</slogan>  <!--slogan of the store-->
+    </storedetails>     <!--ending of storedetails -->
+
+    <songs>     <!--songs child of store i.e. parent element-->
+        <song s_id="s01" genre="Pop" price="$39.99"> <!--each song data is entered inside of it-->
+            <image img_id="img01">          <!--image of a child-->
+            </image>
+            <songinfo>              <!--details of the song-->
+                <name>Name: SOMEONE YOU LOVED</name>    <!--name of the song-->
+                <releaseDate>Released Date: 8 November 2018</releaseDate>       <!--releaseDate of the song-->
+                <length>Length: 3:53</length>           <!--length of the song-->
+                <producers>     <!--details of producers of the song is entered inside-->
+                    <producer>Producer(s): TMS</producer>   <!--producer of the song-->
+                </producers>
+                <writers>           <!--details of writers of the song is entered inside-->
+                    <writer>Writer(s): LEWIS CAPALDI,</writer>  <!--writer of the song-->
+                    <writer>Samuel Romans,</writer>
+                    <writer>Thomas Barnes,</writer>
+                </writers>
+                <singers>       <!--details of singers of the song is entered inside-->
+                    <singer siType="Lead-Singer">Singer(s): LEWIS CAPALDI </singer>         <!--singer of the song-->
+                </singers>  
+                <genres>        <!--genres of song-->
+                    <genre>Genre(s): Pop </genre>   <!--each genre-->
+                </genres>
+                <publishers>        <!--details of publishers of song-->
+                    <publisher>Publisher(s): BMG</publisher>    <!--publisher of the song--> 
+                    <publisher>Sony Music Entertainment</publisher>
+                </publishers>
+                <achievements>      <!--details of achievements of song-->
+                    <achievement>🏆Best selling single of 2019</achievement> <!--achievement of the song-->
+                    <achievement>🏆Song of the year 2020 Brit Awards.</achievement>
+                </achievements>
+            </songinfo> <!--ending of details of the song-->
+            <buy buy_id="s01">$39.99</buy>  <!--price of the song-->
+        </song><!--ending of song-->
+        <song s_id="s02" genre="Rap" price="$29.99"><!--each song data is entered inside of it--> 
+            <image img_id="img02">  <!--image of a child-->
+            </image>
+            <songinfo> <!--details of the song-->
+                <name>Name: OLD TOWN ROAD</name> <!--name of the song-->
+                <releaseDate>Released Date: 2 December 2018</releaseDate> <!--releaseDate of the song-->
+                <studios>   <!--details of the studios of the song-->
+                    <studio>Studio(s): CinCoYo (Atlanta, Georgia)</studio> <!--studio of the song-->
+                </studios>
+                <length>Length: 1:53</length> <!--length of the song-->
+                <labels>    <!--details of the labels of the song-->
+                    <label>Label(s): Columbia</label> <!--label of the song-->
+                </labels>
+                <producers> <!--details of producers of the song is entered inside-->
+                    <producer>Producer(s): YoungKio</producer>  <!--producer of the song-->
+                    <producer> Trent Reznor</producer>  <!--producer of the song-->
+                </producers>
+                <writers> <!--details of writers of the song is entered inside-->
+                    <writer>Writer(s): LEWIS CAPALDI,</writer> <!--writer of the song-->
+                    <writer>Montero Hill (Lis Nas X),</writer>  <!--writer of the song-->
+                </writers>
+                <singers> <!--details of singers of the song is entered inside-->
+                    <singer siType="Lead-Singer">Singer(s): Montero Hill (Lis Nas X)</singer> <!--singer of the song-->
+                </singers>
+                <genres> <!--genres of song-->
+                    <genre>Genre(s): Hip Pop,</genre>  <!--each genre-->
+                    <genre>Country Rap</genre>  <!--each genre-->
+                </genres>
+                <distributors>  <!--details of distributors-->
+                    <distributor>Distributor(s): Sony Music Entertainment</distributor> <!--distributor-->
+                </distributors>
+                <achievements> <!--details of achievements of song-->
+                    <achievement>🏆Diamond certification by RIAA in 2019</achievement>  <!--achievement of the song-->
+                    <achievement>🏆Top Rap Song by Billboard Music Awards in 2020</achievement>  <!--achievement of the song-->
+                </achievements> 
+            </songinfo> <!--ending of details of the song-->
+            <buy buy_id="s02">$29.99</buy> <!--price of the song-->
+        </song> <!--ending of song-->
+        <song s_id="s03" genre="Pop" price="$49.99"> <!--each song data is entered inside of it--> 
+            <image img_id="img03">  <!--image of a child-->
+            </image>
+            <songinfo> <!--details of the song-->
+                <name>Name: I DON'T CARE</name> <!--name of the song-->
+                <releaseDate>Released Date: 10 May 2019</releaseDate> <!--releaseDate of the song-->
+                <length>Length: 3:39</length>  <!--length of the song-->
+                <labels>   <!--details of the labels of the song-->
+                    <label>Label(s): Atlantic UK</label>   <!--label of the song-->
+                    <label> Def Jam</label>  <!--label of the song-->
+                    <label>  Warner UK</label>  <!--label of the song-->
+                </labels>
+                <producers>  <!--details of producers of the song is entered inside-->
+                    <producer>Producer(s):FRED</producer>      <!--producer of the song-->
+                    <producer> Max Martin</producer>  <!--producer of the song-->
+                    <producer> Shellback</producer> <!--producer of the song-->
+                </producers>
+                <writers>  <!--details of writers of the song is entered inside-->
+                    <writer>Writer(s): Ed Sheeren,</writer> <!--writer of the song-->
+                    <writer>Fred Gibson,</writer> <!--writer of the song-->
+                </writers>
+                <singers> <!--details of singers of the song is entered inside-->
+                    <singer siType="Lead-Singer">Singer(s): ED SHEERAN,</singer> <!--singer of the song-->
+                    <singer siType="Backup-Singer">JUSTIN BIEBER</singer>  <!--singer of the song-->
+                </singers>
+                <genres>  <!--genres of song-->
+                    <genre>Genre(s): Electropop</genre>  <!--each genre-->
+                </genres>
+                <publishers>  <!--details of publishers of song-->
+                    <publisher>Publisher(s): Sony/ATV Harmony</publisher> <!--publisher of the song--> 
+                    <publisher>PolyGram</publisher><!--publisher of the song--> 
+                </publishers>
+            </songinfo> <!--ending of details of the song-->
+            <buy buy_id="s03">$49.99</buy><!--price of the song-->
+        </song> <!-- ending details of the third song-->
+        <song s_id="s04" genre="Pop" price="$59.99"> <!-- details of the fourth song-->
+            <image img_id="img04"> 
+            </image>    
+            <songinfo>
+                <name>Name: BAD GUY</name>
+                <releaseDate>Released Date: 29 May 2019</releaseDate>
+                <length>Length: 3:14</length>
+                <labels>
+                    <label>Label(s): Darkroom,</label>
+                    <label>Interscope</label>
+                </labels>
+                <directors>
+	                <director>Dave Meyers</director>
+                </directors>
+                <producers>
+                    <producer>Producer(s): Finneas O'Connell</producer>
+                </producers>
+                <writers>
+                    <writer>Writer(s): BILLIE EILISH,</writer>
+                    <writer>Finneas O'Connell</writer>
+                </writers>
+                <singers>
+                    <singer siType="Lead-Singer">Singer(s): BILLIE EILISH </singer>
+                </singers>
+                <genres>
+                    <genre>Genre(s):Electropop,</genre>
+                    <genre>Dance-pop</genre>
+                </genres>
+                <publishers>
+                    <publisher>Publisher(s): Kobalt Music</publisher>
+                    <publisher>Last Frontier Drup</publisher>
+                </publishers>
+                <achievements>
+                    <achievement>🏆Tenfold Platinum award from the ARIA</achievement>
+                    <achievement>🏆 Record and Song of the Year at 62nd Anual Grammy Awards</achievement>
+                </achievements>
+            </songinfo>
+            <buy buy_id="s04">$59.99</buy>
+        </song> <!--ending details of the fourth song-->
+        <song s_id="s05" genre="Rock" price="$19.99"> <!-- details of the fifth song-->
+            <image img_id="img05"> 
+            </image>
+            <songinfo>
+                <name>Name: GIANT</name>
+                <releaseDate>Released Date: 11 January 2019</releaseDate>
+                <length>Length: 3:49</length>
+                <labels>
+                    <label>Label(s): Columbia</label>
+                </labels>
+                <producers>
+                    <producer>Producer(s): CALVIN HARRIS</producer>
+                </producers>
+                <writers>
+                    <writer>Writer(s): Adam Wiles,</writer>
+                    <writer>Rory Graham,</writer>
+                </writers>
+                <singers>
+                    <singer siType="Lead-Singer">Singer(s): CALVIN HARRIS,</singer>
+	                <singer siType="Backup-Singer">RAG'N'BONE MA </singer>
+                </singers>
+                <genres>
+                    <genre>Genre(s): Dance,</genre>
+                    <genre>House</genre>
+                </genres>
+            </songinfo>
+            <buy buy_id="s05">$19.99</buy>
+        </song> <!--ending details of the fifth song-->
+        <song s_id="s06" genre="Pop" price="$39.99"> <!-- details of the sixth song-->
+            <image img_id="img06"> 
+            </image>
+            <songinfo>
+                <name>Name: WITHOUT YOU</name>
+                <releaseDate>Released Date: 6 November 2020</releaseDate>
+                <length>Length: 2:41</length>
+                <labels>
+                    <label>Label(s): Grade AColumbia</label>
+                </labels>
+                <directors>
+                    <director>Director(s): Bradley &amp;</director>
+                    <director>Pablo</director>
+                </directors>
+                <producers>
+                    <producer>Producer(s): Blake Slatkin,</producer>
+                    <producer> Omer Fedi</producer>
+                </producers>
+                <writers>
+                    <writer>Writer(s): Billy Walsh,</writer>
+                    <writer>Blake Slatkin,</writer>
+                </writers>
+                <singers>
+                    <singer siType="Lead-Singer">Singer(s): Charlton Kenneth Jeffrey Howard (The Kid Laroi)</singer>
+                </singers>
+                <genres>
+                    <genre>Genre(s): Pop punk</genre>
+                </genres>
+                <distributors>
+                    <distributor>Distributor(s): Sony Music Entertainment</distributor>
+                </distributors>
+            </songinfo>
+            <buy buy_id="s15">$39.99</buy>
+        </song> <!--Ending details of the sixth song-->
+        <song s_id="s07" genre="Pop" price="$59.99"> <!-- details of the seventh song-->
+            <image img_id="img07"> 
+            </image>
+            <songinfo>
+                <name>Name: DANCE MONKEY</name>
+                <releaseDate>Released Date: 10 May 2019</releaseDate>
+                <length>Length: 3:29</length>
+                <labels>
+                    <label>Label(s): Bad Batch,</label>
+                    <label> Sony Music,</label>
+                    <label> Elektra</label>
+                </labels>
+                <producers>
+                    <producer>Producer(s): Konstantin Kersting</producer>
+                </producers>
+                <writers>
+                    <writer>Writer(s): Toni Watson</writer>
+                </writers>
+                <singers>
+                    <singer siType="Lead-Singer">Singer(s): Toni Watson (Tones and I) </singer>
+                </singers>
+                <genres>
+                    <genre>Genre(s): Electropop,</genre>
+                    <genre>pop</genre>
+                </genres>
+                <achievements>
+                    <achievement>🏆ARIA Award for Best Female Artist</achievement>
+                    <achievement>🏆Best Pop release</achievement>
+                </achievements>
+            </songinfo>
+            <buy buy_id="s13">$59.99</buy>
+        </song> <!--ending details of the seventh song-->
+        <song s_id="s08" genre="Rock" price="$29.99"> <!-- details of the eigth song-->
+            <image img_id="img08"> 
+            </image>
+            <songinfo>
+                <name>Name: GOOD DAYS</name>
+                <releaseDate>Released Date: 25 December 2020</releaseDate>
+                <length>Length: 4:39</length>
+                <labels>
+                    <label>Label(s): Top Dawg,</label>
+                    <label> RCA</label>
+                </labels>
+                <directors>
+                    <director>Director(s): Solána Imani Rowe (SZA)</director>
+                </directors>
+                <producers>
+                    <producer>Producer(s): Carter Lang,</producer>
+                    <producer>Loshendrix,</producer>
+                    <producer>Nascent</producer>
+                </producers>
+                <writers>
+                    <writer>Writer(s): Solána Rowe,</writer>
+                    <writer> Carlos Muñoz, </writer>
+                    <writer>Carter Lang,</writer>
+                </writers>
+                <singers>
+                    <singer siType="Lead-Singer">Singer(s): Solána Imani Rowe (SZA)</singer>
+                </singers>
+                <genres>
+                    <genre>Genre(s): Alternative R&amp;B,</genre>
+                    <genre>neo-soul</genre>
+                </genres>
+            </songinfo>
+            <buy buy_id="s10">$29.99</buy>
+        </song> <!--ending details of the eigth song-->
+        <song s_id="s09" genre="Pop" price="$49.99"> <!-- details of the ninth song-->
+            <image img_id="img09"> 
+            </image>
+            <songinfo>
+                <name>Name: MOOD</name>
+                <releaseDate>Released Date: 24 July 2020</releaseDate>
+                <length>Length: 2:20</length>
+                <labels>
+                    <label>Label(s): Records,</label>
+                    <label> Columbia</label>
+                </labels>
+                <directors>
+                    <director>Director(s): Sebastian Sdaigui</director>
+                </directors>
+                <producers>
+                    <producer>Producer(s): KBeazy,</producer>
+                    <producer>Fedi,</producer>
+                    <producer>Slatkin</producer>
+                </producers>
+                <writers>
+                    <writer>Writer(s): Golden Von Jones,</writer>
+                    <writer> Michael Olmo, </writer>
+                    <writer>Keegan Bach,</writer>
+                </writers>
+                <singers>
+                    <singer siType="Lead-Singer">Singer(s): Golden Landis Von Jones (24kGoldn)</singer>
+                    <singer siType="Backup-Singer">Iann Dior</singer>
+                </singers>
+                <genres>
+                    <genre>Genre(s): Pop rap,</genre>
+                    <genre> rap rock</genre>
+                </genres>
+                <achievements>
+                    <achievement>🏆double platinum by RIAA</achievement>
+                </achievements>
+            </songinfo>
+            <buy buy_id="s09">$49.99</buy>
+        </song> <!-- ending details of the ninth song-->
+        <song s_id="s10" genre="Rap" price="$99.99">  <!-- details of the tenth song-->
+            <image img_id="img10"> 
+            </image>
+            <songinfo>
+                <name>Name: GOOSEBUMPS</name>
+                <releaseDate>Released Date: 13 December 2019</releaseDate>
+                <recorded>Recorded: 2016</recorded>
+                <length>Length: 4:03</length>
+                <labels>
+                    <label>Label(s): Grand Hustle,</label>
+                    <label> Epic</label>
+                </labels>
+                <directors>
+                    <director>Director(s): BRTHR</director>
+                </directors>
+                <producers>
+                    <producer>Producer(s): Cardo,</producer>
+                    <producer>Yung Exclusive,</producer>
+                </producers>
+                <writers>
+                    <writer>Writer(s): OLIVIA RODRIGO,</writer>
+                    <writer> Daniel Nigro</writer>
+                </writers>
+                <singers>
+                    <singer siType="Lead-Singer">Singer(s): Jacques Webster II,</singer>
+                    <singer siType="Backup-Singer">Kendrick Duckworth,</singer>
+                    <singer siType="Backup-Singer">Ronald LaTour,</singer>
+                    <singer siType="Backup-Singer">Daveon Jackson</singer>
+                </singers>
+                <genres>
+                    <genre>Genre(s): Hiphop</genre>
+                    <genre> Rap</genre>
+                </genres>
+                <publishers>
+                    <publisher>Publisher(s): Sony Music Entertainment,</publisher>
+                    <publisher>New World Music</publisher>
+                </publishers>
+            </songinfo>
+            <buy buy_id="s08">$99.99</buy>
+        </song> <!-- ending details of the tenth song-->
+        <song s_id="s11" genre="Dubstep" price="$49.99"> <!-- details of the eleventh song-->
+            <image img_id="img11"> 
+            </image>
+            <songinfo>
+                <name>Name: SAVE YOUR TEARS</name>
+                <releaseDate>Released Date: 20 March 2020</releaseDate>
+                <recorded>Recorded: 2019-2020</recorded>
+                <studios>
+                    <studio>Studio(s): Conway (Los Angeles, California), </studio>
+                    <studio>Jungle City (New York, New York),</studio>
+                    <studio> House Mouse Studios (Stockholm, Sweden)</studio>
+                </studios>
+                <length>Length: 3:35</length>
+                <labels>
+                    <label>Label(s): XO,</label>
+                    <label> Republic</label>
+                </labels>
+                <directors>
+                    <director>Director(s): CLIQUA</director>
+                </directors>
+                <producers>
+                    <producer>Producer(s): Max Martin,</producer>
+                    <producer>Oscar Holter,</producer>
+                    <producer>The Weeknd</producer>
+                </producers>
+                <writers>
+                    <writer>Writer(s): The Weeknd,</writer>
+                    <writer> Belly,</writer>
+                </writers>
+                <singers>
+                    <singer siType="Lead-Singer">Singer(s): Abel Makkonen Tesfaye</singer>
+                </singers>
+                <genres>
+                    <genre>Genre(s): Synthwave,</genre>
+                    <genre> Synthpop</genre>
+                </genres>
+            </songinfo>
+            <buy buy_id="s11">$49.99</buy>
+        </song> <!--Ending details of the eleventh song-->
+        <song s_id="s12" genre="Rap" price="$49.99"> <!-- details of the twelveth song-->
+            <image img_id="img12"> 
+            </image>
+            <songinfo>
+                <name>Name: LEMONADE</name>
+                <releaseDate>Released Date: 14 August 2020</releaseDate>
+                <recorded>Recorded: 2017 (original) 2020</recorded>
+                <length>Length: 3:15</length>
+                <labels>
+                    <label>Label(s): Internet Monet,</label>
+                    <label>TenThousand</label>
+                </labels>
+                <directors>
+                    <director>Director(s): Cole Bennett</director>
+                </directors>
+                <producers>
+                    <producer>Producer(s): Krista Worby &amp;</producer>
+                    <producer> Jay Tauzin</producer>
+                </producers>
+                <writers>
+                    <writer>Writer(s): Birdman Zoe,</writer>
+                    <writer> Don Toliver,</writer>
+                    <writer>Dizzycleanface, </writer>
+                </writers>
+                <singers>
+                    <singer siType="Lead-Singer">Singer(s): Internet Money,</singer>
+                    <singer siType="Backup-Singer"> Gunna &amp; </singer>
+                    <singer siType="Backup-Singer">Don Tolivere</singer>
+                </singers>
+                <genres>
+                    <genre>Genre(s): Hip-Hop,</genre>
+                    <genre> Rap</genre>
+                </genres>
+                <publishers>
+                    <publisher>Publisher(s): E-Trou,</publisher>
+                    <publisher>BMG</publisher>
+                </publishers>
+            </songinfo>
+            <buy buy_id="s12">$49.99</buy>
+        </song> <!-- ending details of the twelveth song-->
+        <song s_id="s13" genre="Dubstep" price="$39.99">  <!-- details of the thirteenth song-->
+            <image img_id="img13"> 
+            </image>
+            <songinfo>
+                <name>Name: BLINDING LIGHTS</name>
+                <releaseDate>Released Date: 29 November 2019</releaseDate>
+                <studios>
+                    <studio>Studio(s): MXM (LA, California),</studio>
+                    <studio>Jungle City (New York, New York)</studio>
+                </studios>
+                <length>Length: 3:32</length>
+                <labels>
+                    <label>Label(s): XO, Republic</label>
+                </labels>
+                <producers>
+                    <producer>Producer(s): Max Martin,</producer>
+                    <producer> Oscar Holter,</producer>
+                    <producer>The Weeknd</producer>
+                </producers>
+                <writers>
+                    <writer>Writer(s): OLIVIA RODRIGO,</writer>
+                    <writer>Daniel Nigro</writer>
+                </writers>
+                <singers>
+                    <singer siType="Lead-Singer">Singer(s): Abel Tesfaye,</singer>
+                    <singer siType="Backup-Singer"> Ahmad Balshe,</singer>
+                    <singer siType="Backup-Singer">Jason Quenneville,</singer>
+                </singers>
+                <genres>
+                    <genre>Genre(s): Synthwave,</genre>
+                    <genre>synth-pop,</genre>
+                    <genre>electropop </genre>
+                </genres>
+                <publishers>
+                    <publisher>Publisher(s):New World Music,</publisher>
+                    <publisher>Warner Music Group</publisher>
+                </publishers>
+                <achievements>
+                    <achievement>🏆Best performing global single of 2020</achievement>
+                </achievements>
+            </songinfo>
+            <buy buy_id="s07">$39.99</buy>
+        </song> <!--Ending details of the thriteenth song-->
+        <song s_id="s14" genre="Pop" price="$39.99"> <!-- details of the fouteenth song-->
+            <image img_id="img14"> 
+            </image>
+            <songinfo>
+                <name>Name: WATERMELON SUGAR</name>
+                <releaseDate>Released Date: 15 May 2020</releaseDate>
+                <studios>
+                    <studio>Studio(s): Real world Studions (Bath, UK),</studio>
+                    <studio>RAK Studios (London, UK),</studio>
+                </studios> 
+                <length>Length: 2:53</length>
+                <labels>
+                    <label>Label(s): Erskine,</label>
+                    <label>Columbia</label>
+                </labels>
+                <directors>
+                    <director>Director(s): Bradley &amp;</director>
+                    <director>Pablo</director>
+                </directors>
+                <producers>
+                    <producer>Producer(s): JohnsonKid,</producer>
+                    <producer> Harpoon</producer>
+                </producers>
+                <writers>
+                    <writer>Writer(s): Harry Styles,</writer>
+                    <writer> Mitch Rowland,</writer>
+                </writers>
+                <singers>
+                    <singer siType="Lead-Singer">Singer(s): Harry Styles</singer>
+                </singers>
+                <genres>
+                    <genre>Genre(s): funk-pop,</genre>
+                    <genre>indie pop</genre>
+                </genres>
+                <publishers>
+                    <publisher>Publisher(s): Concord Music Group,</publisher>
+                    <publisher>HSA Publishing</publisher>
+                </publishers>
+                <achievements>
+                    <achievement>🏆Best Pop Solo Performance at 2021 Grammy Award</achievement>
+                </achievements>
+            </songinfo>
+            <buy buy_id="s14">$39.99</buy>
+        </song> <!--ending details of the fourteenth song-->
+        <song s_id="s15" genre="Pop" price="$19.99">  <!-- details of the fifteenth song-->
+            <image img_id="img15"> 
+            </image>
+            <songinfo>
+                <name>Name: DRIVERS LICENSE</name>
+                <releaseDate>Released Date: 8 January 2021</releaseDate>
+                <recorded>Recorded: 2020</recorded>
+                <length>Length: 4:02</length>
+                <labels>
+                    <label>Label(s): Geffen,</label>
+                    <label>Interscope</label>
+                </labels>
+                <producers>
+                    <producer>Producer(s): Daniel Nigro</producer>
+                </producers>
+                <writers>
+                    <writer>Writer(s): OLIVIA RODRIGO,</writer>
+                    <writer>Daniel Nigro</writer>
+                </writers>
+                <singers>
+                    <singer siType="Lead-Singer">Singer(s):OLIVIA RODRIGO</singer>
+                </singers>
+                <genres>
+                    <genre>Genre(s):Power Pop</genre>
+                    <genre>Bedroom pop</genre>
+                    <genre>Indie pop</genre>
+                </genres>
+                <publishers>
+                    <publisher>Publisher(s): Lic Laf Luv</publisher>
+                    <publisher>Sony/ATV Allergo</publisher>
+                </publishers>
+                <distributors>
+                    <distributor>Distributor(s): Universal Music Group</distributor>
+                </distributors>
+                 <achievements>
+                    <achievement>🏆double platinum by the RIAA</achievement>
+                </achievements> 
+            </songinfo>
+            <buy buy_id="s06">$19.99</buy>
+        </song> <!--ending details of the fifteenth song-->
+        <song s_id="s16" genre="Dubstep" price="$39.99"> <!-- details of the sixteenth song-->
+            <image img_id="img16"> 
+            </image>
+            <songinfo>
+                <name>Name: LEVITATING</name>
+                <releaseDate>Released Date: 1 October 2020</releaseDate>
+                <recorded>Recorded: 28 August 2018 </recorded>
+                <studios>
+                    <studio>Studio(s): Sarm (London, United Kingdom),</studio>
+                    <studio>the Bunker at 13,</studio>
+                    <studio> Sarm Music Village (London, United Kingdom),</studio>
+                </studios>
+                <length>Length: 3:23</length>
+                <labels>
+                    <label>Label(s): Warner</label>
+                </labels>
+                <producers>
+                    <producer>Producer(s): KozStuart,</producer>
+                    <producer>Price</producer>
+                </producers>
+                <writers>
+                    <writer>Writer(s): Dua Lipa,</writer>
+                    <writer>Clarence Coffee Jr.,</writer>
+                    <writer>Sarah Hudson,</writer>
+                </writers>
+                <singers>
+                    <singer siType="Lead-Singer">Singer(s): Charlton Kenneth Jeffrey Howard (The Kid Laroi)</singer>
+                </singers>
+                <genres>
+                    <genre>Genre(s): Electro-disco,</genre>
+                    <genre> nu-disco,</genre>
+                    <genre>pop-funk</genre>
+                </genres>
+                <publishers>
+                    <publisher>Publisher(s): New World Music,</publisher>
+                    <publisher>TaP Music</publisher>
+                </publishers>
+                <achievements>
+                    <achievement>🏆Platinum certification in UK by the BPI</achievement>
+                </achievements>
+            </songinfo>
+            <buy buy_id="s16">$39.99</buy>
+        </song> <!--ending details of the sixteenth song-->
+    </songs> <!-- ending of the song element-->
+
+    <footer>
+        <socials>
+            <social social="instagram">
+            </social>
+            <social social="facebook">
+            </social>
+            <social social="youtube">
+            </social>
+            <social social="linkedin">
+            </social>
+        </socials>
+        <privacy>
+            All rights reserved. &#169; 2021
+        </privacy>
+    </footer>
+</store>  <!--ending of the xml document-->

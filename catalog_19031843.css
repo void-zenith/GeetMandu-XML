@@ -1,0 +1,502 @@
+/*applying css reset*/
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+/*defining keyframes animation*/
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadefromtop {
+    0% {
+        top: -300px;
+        opacity: 0;
+    }
+    50% {
+        top: 50px;
+        opacity: 1;
+    }
+    100% {
+        top: 0px;
+        opacity: 1;
+    }
+}
+
+
+/*creating variables for font-size and font-family*/
+
+ :root {
+    --headingFont: Helvetica;
+    --commonFont: Arial;
+    --headingFontSize: 60px;
+    --textFontSize: 25px;
+    --listFontSize: 17px;
+}
+
+
+/*end of creating variables*/
+
+
+/*----creating custom scrollbar----*/
+
+store::-webkit-scrollbar {
+    width: 10px;
+}
+
+store::-webkit-scrollbar-track {
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px grey;
+}
+
+store::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    border-radius: 10px;
+}
+
+store::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+
+/*----end of creating custom scrollbar----*/
+
+
+/*designing the storedetiails of the store*/
+
+
+/*implementing concept of flexbox*/
+
+storedetails {
+    display: flex;
+    flex-direction: column;
+    background-image: url(Images/music.jpg);
+    /*inserting background image*/
+    background-position: 0% 40%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 460px;
+    width: 100%;
+}
+
+
+/*designing the logo for the store*/
+
+
+/*using float to place the logo*/
+
+logo {
+    position: relative;
+    background-image: url(Images/logo.png);
+    /*inserting a logo of a music store*/
+    margin-top: -25px;
+    width: 130px;
+    height: 130px;
+    float: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    animation: fadefromtop 1.5s;
+    /*implementing keyframe animation "fadefromtop" */
+}
+
+
+/*designing the info section of the store*/
+
+
+/*implementing the concept of glassmorphism*/
+
+info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    justify-content: center;
+    text-align: center;
+    width: 650px;
+    margin-left: 50px;
+    border-radius: 10px;
+    padding: 25px 50px;
+    line-height: 1.5;
+    background: rgba( 255, 255, 255, 0.20);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 14.0px);
+    -webkit-backdrop-filter: blur( 14.0px);
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+    animation: fadefromtop 1.5s;
+    /*implementing keyframe animation "fadefromtop" */
+}
+
+info:hover {
+    transform: translate(15px, -15px);
+    transition: 0.5s ease;
+}
+
+
+/*designing*/
+
+storename,
+address,
+phones,
+website {
+    position: relative;
+    animation: fade 3s ease-out;
+    /*implementing keyframe animation "fade" */
+}
+
+storename {
+    font-family: var(--headingFont);
+    font-size: var(--headingFontSize);
+    font-weight: 700;
+}
+
+address,
+phones,
+website {
+    font-family: var(--commonFont);
+    font-size: var(--textFontSize);
+}
+
+slogan {
+    position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 45px;
+    background: -webkit-linear-gradient(45deg, #4cc7e6, #8f07a1 80%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    word-wrap: break-word;
+    margin-top: 40px;
+    text-align: center;
+    animation: fade 1.5s linear;
+}
+
+
+/*css for songs */
+
+songs {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: rgb(235, 160, 20);
+    height: fit-content;
+    width: 100%;
+}
+
+song {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background: rgba( 255, 255, 255, 0.20);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 14.0px);
+    -webkit-backdrop-filter: blur( 14.0px);
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+    margin: 15px 5px 15px 5px;
+    height: fit-content;
+}
+
+songinfo {
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+}
+
+buy {
+    text-align: center;
+    background-color: #27ae60;
+    margin: 5px auto;
+    padding: 10px;
+    border-radius: 10px;
+    width: 70px;
+    font-size: 15px;
+    animation: rev 0.7s ease;
+}
+
+@keyframes rev {
+    from {
+        transform: scale(1.2, 1.2);
+    }
+    to {
+        transform: scale(1, 1);
+    }
+}
+
+@keyframes ani {
+    from {
+        transform: scale(1, 1);
+    }
+    to {
+        transform: scale(1.2, 1.2);
+    }
+}
+
+buy:hover {
+    cursor: pointer;
+    font-size: 0px;
+    animation: ani 0.7s ease;
+    animation-fill-mode: forwards;
+}
+
+buy:hover::after {
+    content: 'BUY';
+    font-size: 15px;
+}
+
+image {
+    height: 300px;
+    opacity: 0.7;
+    width: initial;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    animation: opacity 1s;
+    box-shadow: 3px 8px 8px 0 rgba(26, 29, 77, 0.37);
+}
+
+image:hover {
+    opacity: 1;
+}
+
+
+/*Ending css for songs*/
+
+
+/*Css for footer of a website*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 85px;
+    background-color: #27ae60;
+    justify-content: center;
+    align-items: center;
+}
+
+socials {
+    display: flex;
+    align-items: center;
+    margin: 10px auto;
+    width: 20%;
+    justify-content: space-between;
+}
+
+social {
+    margin: 5px;
+    width: 30px;
+    height: 20px;
+    background-repeat: no-repeat;
+}
+
+social:hover {
+    cursor: pointer;
+    filter: brightness(0);
+    transition: 0.5s linear;
+}
+
+privacy {
+    font-size: 16px;
+}
+
+
+/*Ending of CSS for Footer*/
+
+
+/*Using attribute of a tag for inserting images*/
+
+[social="instagram"] {
+    background-image: url(Images/icons8_instagram.svg);
+}
+
+[social="facebook"] {
+    background-image: url(Images/icons8_facebook.svg);
+}
+
+[social="linkedin"] {
+    background-image: url(Images/icons8_linkedin_1.svg);
+}
+
+[social="youtube"] {
+    background-image: url(Images/icons8_youtube.svg);
+}
+
+[img_id="img01"] {
+    background-image: url(Images/someone-you-loved.png);
+}
+
+[img_id="img02"] {
+    background-image: url(Images/old-town-road.jpg);
+}
+
+[img_id="img03"] {
+    background-image: url(Images/i\ dont\ care.png);
+}
+
+[img_id="img04"] {
+    background-image: url(Images/bad-guy.png);
+}
+
+[img_id="img05"] {
+    background-image: url(Images/Giant.png);
+}
+
+[img_id="img06"] {
+    background-image: url(Images/without\ you.jpg);
+}
+
+[img_id="img07"] {
+    background-image: url(Images/dance\ monkey.jpg);
+}
+
+[img_id="img08"] {
+    background-image: url(Images/good\ days.png);
+}
+
+[img_id="img09"] {
+    background-image: url(Images/mood.png);
+}
+
+[img_id="img10"] {
+    background-image: url(Images/goosebumps.jpg);
+}
+
+[img_id="img11"] {
+    background-image: url(Images/save\ your\ tears.png);
+}
+
+[img_id="img12"] {
+    background-image: url(Images/lemonade.png);
+}
+
+[img_id="img13"] {
+    background-image: url(Images/Blinding\ Lights.png);
+}
+
+[img_id="img14"] {
+    background-image: url(Images/watermelon\ sugar.png);
+}
+
+[img_id="img15"] {
+    background-image: url(Images/save\ your\ tears.png);
+}
+
+[img_id="img16"] {
+    background-image: url(Images/levitating.png);
+}
+
+
+/*End of inserting images*/
+
+
+/*CSS to display details of song as a list*/
+
+name,
+releaseDate,
+recorded,
+studios,
+length,
+labels,
+directors,
+producers,
+writers,
+singers,
+genres,
+publishers,
+achievements,
+distributors {
+    display: list-item;
+    list-style-position: inside;
+    font-family: var(--commonFont);
+    font-size: var(--listFontSize);
+    line-height: 1.7;
+}
+
+
+/*Media Query for responsiveness of the the website.*/
+
+@media screen and (max-width:1088px) {
+     :root {
+        --headingFontSize: 45px;
+        --textFontSize: 20px;
+        --listFontSize: 15px;
+    }
+    song {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:914px) {
+    info {
+        padding: 10px 10px;
+    }
+    storedetails {
+        background-position: right;
+        height: 57vh;
+    }
+}
+
+@media screen and (max-width:730px) {
+    storedetails {
+        background-position: right;
+        height: 55vh;
+    }
+    info {
+        width: 70%;
+        margin-left: 70px;
+    }
+    song {
+        width: 280px;
+    }
+}
+
+@media screen and (max-width:632px) {
+    storedetails {
+        background-position: bottom right;
+        height: 50vh;
+    }
+     :root {
+        --headingFontSize: 35px;
+        --textFontSize: 15px;
+        --listFontSize: 12px;
+    }
+    info {
+        width: 80%;
+        margin: 0 auto;
+    }
+    song {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width:552px) {
+    slogan {
+        font-size: 35px;
+    }
+    song {
+        width: 220px;
+    }
+}
+
+
+/*Ending of Media Query for responsiveness of the the website.*/
+
+
+/*Ending of CSS*/
